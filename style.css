@@ -79,6 +79,13 @@ background: linear-gradient(90deg, rgba(117,16,247,1) 0%, rgba(0,0,0,0) 98%); */
     width: 600px;
 }
 
+
+.introduction>svg{
+    position: relative;
+    bottom: -20px;
+    width: 600px;
+}
+
 .intro__aboutme, .comapnies__header{
     color:  white;
     padding:  40px 20px 20px 20px;
