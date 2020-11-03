@@ -366,6 +366,10 @@ form>button{
 .introduction>img{
     width: 350px !important;
 }
+    
+ .introduction>svg{
+   width: 350px !important;
+}
 
 .techstack__chart__container{
     display: none;
