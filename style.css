@@ -47,15 +47,11 @@ background: linear-gradient(90deg, rgba(117,16,247,1) 0%, rgba(0,0,0,0) 98%); */
 }
 
 .header__right>a>.fab {
-    color:  black;
-    font-size: 20px;
     transition: all 0.5ms;
-}
-
-.header__right>a>.fab:hover{
     font-size: 25px;
     color: rgb(117,16,247)
 }
+
 
 .welcome{
     padding-top: 100px;
@@ -307,11 +303,13 @@ h5{
     background: rgb(117,16,247);
     padding: 20px 30px 20px 30px;
     border-radius: 10px;
+    text-align: center;
 }
 
 form>textarea {
     resize: none;
     padding: 5px;
+    border-radius: 10px;
 }
 
 form>input{
@@ -365,8 +363,6 @@ form>button{
 }
 
 .introduction>img{
-    position: relative;
-    bottom: -20px;
     width: 350px;
 }
 
