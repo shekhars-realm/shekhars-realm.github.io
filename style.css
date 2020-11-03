@@ -163,10 +163,6 @@ h5{
     font-weight: 700;
 }
 
-svg:hover path {
-    fill: red;
-}
-
 .companies>img{
     width: 200px;
     position: relative;
