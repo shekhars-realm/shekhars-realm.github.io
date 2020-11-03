@@ -1,0 +1,397 @@
+*{
+    font-family: "Courier", sans-serif;;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: rgb(117,16,247);
+background: linear-gradient(90deg, rgba(117,16,247,1) 0%, rgba(0,0,0,0) 98%); */
+    padding: 15px;
+}
+
+.header__left{
+    color:  rgb(117,16,247)
+}
+
+.header__left>h2{
+    background-color: rgb(117,16,247);
+    color: white;
+    padding:  5px;
+}
+
+.header__right{
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__button{
+    background-color: transparent;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid rgb(117,16,247);
+    color: rgb(117,16,247);
+    cursor: pointer;
+    transition: all  0.5s;
+    width: 70px
+}
+
+.header__button:hover {
+    background-color: rgb(117,16,247);
+    color:  white
+}
+
+.header__right>a>.fab {
+    color:  black;
+    font-size: 20px;
+    transition: all 0.5ms;
+}
+
+.header__right>a>.fab:hover{
+    font-size: 25px;
+    color: rgb(117,16,247)
+}
+
+.welcome{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.welcome>h4{
+    font-weight: 100;
+    margin: 20px;
+}
+
+.welcome>img{
+    width: 250px;
+    border-radius: 40px;
+}
+
+.introduction,.companies{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.introduction>img{
+    position: relative;
+    bottom: -20px
+}
+
+.intro__aboutme, .comapnies__header{
+    color:  white;
+    padding:  40px 20px 20px 20px;
+    background-color: rgb(117,16,247);
+    text-align: center;
+    display: inline-block;
+    width: 90%;
+}
+
+.intro__aboutme, .comapnies__header>h2{
+    font-weight: 300;
+}
+
+.intro__aboutme>h5{
+    font-weight: 100;
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+.techstack{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin: 30px auto;
+    min-height: 300px;
+    max-width: 800px;
+}
+
+.techstack>.fab{
+    color: black!important;
+    
+}
+
+.frontend,.backend,.deployment{
+    padding: 5px;
+    flex:  0.3;
+    font-weight: 300;
+    text-align: center;
+}
+
+.techstack__icons{
+    font-size: 50px;
+    color: lightgrey;
+    margin-bottom: 20px;
+}
+
+.techstack__borderleft{
+    border-left:1px solid rgb(117,16,247)
+}
+
+h5{
+    font-weight: 100;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+
+.techstack__chart__container{
+    width: 800px;
+    margin: auto
+}
+
+.techstack__lib{
+    margin-top: 30px;
+}
+
+.techstack__lib__name {
+    padding: 5px;
+    margin: 2px;
+    display: inline-block;
+    background: rgb(117,16,247);
+    color: white;
+}
+
+.techstack__lib__name:hover{
+    color: black;
+    background-color: white;
+    font-weight: 700;
+}
+
+svg:hover path {
+    fill: red;
+}
+
+.companies>img{
+    width: 200px;
+    position: relative;
+    bottom: -20px
+}
+
+.companies__grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.companies__grid__item {
+    border: 1px  solid rgb(117,16,247);
+    border-radius: 5px;
+    margin:  5px;
+    padding:  5px;
+    transition: all 0.5s;
+    max-height: 350px;
+}
+
+.companies__grid__item>h6{
+    margin-top: 20px;
+    color:  rgb(117,16,247);
+}
+
+.companies__grid__item>h4{
+    margin-top: 20px;
+}
+
+.companies__grid__item:hover{
+    background-color: rgb(117,16,247) !important;
+    color: white  !important;
+    border: 1px dashed white
+}
+
+.companies__grid__item:hover .companies__goto__website{
+    border: 1px  solid white;
+    color: white;
+    background-color: rgb(117,16,247);
+    box-shadow: 2px 2px 12px 3px;
+}
+
+
+
+.more__on__git, .companies__goto__website, .email__me{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(117,16,247);
+    border-radius: 20px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid grey;
+}
+
+
+.more__on__git:hover, .email__me:hover {
+    border: 1px  solid white;
+    color: white;
+    background-color: rgb(117,16,247);
+    box-shadow: 2px 2px 12px 3px;
+}
+
+.testimonials__container{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.mySlides {
+    display:none
+}
+
+.testimony__header>h4{
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.testimonies{
+    max-width: 650px;
+    margin: 30px auto
+}
+
+.mySlides>img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.mySlides>h3{
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+.mySlides>h4{
+    margin-top: 20px;
+}
+
+.mySlides>h5{
+    margin-top: 0px;
+}
+
+.footer {
+    height: 100px;
+    background-color: rgb(117,16,247);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer>h4{
+    margin-bottom: 30px;
+    font-weight: 100;
+}
+
+.foooter__icons{
+    margin-top: 30px;
+}
+
+.foooter__icons>a{
+    text-decoration: none;
+}
+
+.footer__icon{
+    color: white;
+}
+
+.contact__me{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    max-width: 900px;
+    margin: auto;
+    border-bottom: 2px solid lightgrey;
+}
+
+.contact__form>form{
+    display: grid;
+    background: rgb(117,16,247);
+    padding: 20px 30px 20px 30px;
+    border-radius: 10px;
+}
+
+form>textarea {
+    resize: none;
+    padding: 5px;
+}
+
+form>input{
+        height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+form>button{
+       margin: 5px;
+    height: 30px;
+    width: 10p;
+    background: lightgrey;
+    border: none;
+    border-radius: 10px;
+}
+
+.contact__card>img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.contact__card{
+    padding:  10px;
+    text-align: center;
+}
+
+.contact__me__container{
+    text-align: center;
+}
+
+.contact__me__container>h2{
+    margin: 20px 0px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .companies__grid{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contact__me{
+    grid-template-columns: auto;
+}
+
+.introduction>img{
+    position: relative;
+    bottom: -20px;
+    width: 350px;
+}
+
+.techstack__chart__container{
+    display: none;
+}
+
+.techstack{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin: 30px auto;
+    min-height: 300px;
+    max-width: 800px;
+}
+
+.header{
+    display: block;
+}
+
+.header__right{
+    margin-top: 10px;
+}
+}
