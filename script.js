@@ -54,15 +54,15 @@ var myPieChart = new Chart(pie, {
             data: [10, 25, 65],
 
             backgroundColor: [
-                'rgba(163, 99, 247,  0.8)',
-                'rgba(133, 47, 245,  0.8)',
-                'rgba(117, 16, 247,  0.8)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
             ],
-            borderColor:[
-                'rgba(163, 99, 247,  1)',
-                'rgba(133, 47, 245,  1)',
-                'rgba(117, 16, 247,  1)',
-            ]
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+            ],
 
         }],
         // These labels appear in the legend and in the tooltips when hovering different arcs
