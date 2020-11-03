@@ -356,6 +356,21 @@ form>button{
 }
 
 
+.chart__container{
+    display:   grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    max-width: 1500px;
+    margin: 10px auto;
+}
+
+.companies>i{
+    position: relative;
+    bottom: -20px;
+    font-size: 150px;
+    color: rgb(117,16,247);
+}
+
 
 @media only screen and (max-width: 768px) {
     .companies__grid{
@@ -368,6 +383,17 @@ form>button{
 
 .contact__me{
     grid-template-columns: auto;
+}
+
+.chart__techs{
+    overflow-x: scroll;
+}
+
+.chart__container{
+    display:   grid;
+    grid-template-columns: auto;
+    text-align: center;
+    max-width: 768;
 }
 
 .introduction>img{

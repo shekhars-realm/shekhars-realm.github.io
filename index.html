@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
         integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
         crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="header">
         <div class="header__left">
@@ -49,9 +51,9 @@
     </div>
 
 
-    <div  id="introduction" class="introduction">
+    <div id="introduction" class="introduction">
         <img class="svg" src="public/images/computersystem.svg" alt="">
-        
+
         <div class="intro__aboutme">
             <h2>
                 Hey! Nice to meet you.
@@ -68,13 +70,14 @@
         <div class="frontend">
             <i class="fas techstack__icons fa-file-code"></i>
             <h4>Frontend Stack</h4>
-            <h5>The goal of a frontend engineering is to build an easy-to-use and intelligible interface between the user and the product.</h5>
+            <h5>The goal of a frontend engineering is to build an easy-to-use and intelligible interface between the
+                user and the product.</h5>
             <p class="techstack__lib">
                 <span class="techstack__lib__name">ReactJS</span>
                 <span class="techstack__lib__name">Redux</span>
                 <span class="techstack__lib__name">JavaScript</span>
                 <span class="techstack__lib__name">HTML 5</span>
-                <span class="techstack__lib__name">CSS  3</span>
+                <span class="techstack__lib__name">CSS 3</span>
                 <span class="techstack__lib__name">Material-UI</span>
             </p>
         </div>
@@ -82,7 +85,8 @@
             <i class="fas techstack__icons fa-code"></i>
             <h4>Backend Stack</h4>
             <h5>
-                As a backend engineer, I work on server components of multi tier web applications. I focus on web services and the
+                As a backend engineer, I work on server components of multi tier web applications. I focus on web
+                services and the
                 data
                 store.
             </h5>
@@ -99,7 +103,8 @@
             <i class="fas techstack__icons fa-laptop-code"></i>
             <h4>Deployment Stack</h4>
             <h5>
-                Involves  creating software deployment strategies that connects different components of a  product and  groups them together.
+                Involves creating software deployment strategies that connects different components of a product and
+                groups them together.
             </h5>
             <p class="techstack__lib">
                 <span class="techstack__lib__name">Docker</span>
@@ -110,41 +115,56 @@
             </p>
         </div>
     </div>
-    <div class="techstack__chart__container">
-        <canvas class="bar__chart" id="myChart" width="400" height="200"></canvas>
-        <canvas id="myPieChart" width="500"></canvas>
+    <div class="chart__container">
+        <div class="chart__techs">
+            Technical Expertise
+            <canvas class="bar__chart" id="myChart"></canvas>
+        </div>
+        <div class="chart__experties">
+            Stack Proficiency
+            <canvas id="myPieChart"></canvas>
+        </div>
     </div>
 
 
-    <br/>
     <br />
     <br />
-    <hr/>
+    <br />
+    <hr />
 
     <div class="companies">
-        <img src="public/images/buildings.svg" alt="">
+        <!-- <img src="public/images/buildings.svg" alt=""> -->
+        <i class="fas fa-city"></i>
         <div class="comapnies__header">
             <h2>
                 Industrial Experience
             </h2>
             <h5>
-                I have had the opportunity to work  with some amazing organisation in my career so far. These organisations have helped my to grow personally and professionally. I have learned a lot from all  of these places and  have met some  really  talented people.
+                I have had the opportunity to work with some amazing organisation in my career so far. These
+                organisations have helped my to grow personally and professionally. I have learned a lot from all of
+                these places and have met some really talented people.
             </h5>
         </div>
         <div class="companies__grid">
             <div class="companies__grid__item">
-                <h3>Magic Softwares Inc.</h3>
+                <h3>Magic EdTech Inc.</h3>
+                <a target="_blank" href="https://www.magicedtech.com/">
+                    <button class="companies__goto__website">Website</button>
+                </a>
                 <h6>INDIA(IN)</h6>
-                <h6>06/2016 - 01/2017 <br/> (0.7 Years)</h6>
+                <h6>06/2016 - 01/2017 <br /> (0.7 Years)</h6>
                 <h4>Software developer</h4>
                 <h5>
                     Development of JavaScript based browser oriented games.
-                    <br/>
+                    <br />
                     Creating an automation platform for HTML to and from PDF translation.
                 </h5>
             </div>
             <div class="companies__grid__item">
                 <h3>Algoworks Tech</h3>
+                <a target="_blank" href="https://www.algoworks.com/">
+                    <button class="companies__goto__website">Website</button>
+                </a>
                 <h6>INDIA(IN)</h6>
                 <h6>01/2017 - 09/2017 <br /> (0.9 Years)</h6>
                 <h4>Full stack developer</h4>
@@ -156,6 +176,9 @@
             </div>
             <div class="companies__grid__item">
                 <h3>InnoCow GmbH</h3>
+                <a target="_blank" href="https://innocow.com">
+                    <button class="companies__goto__website">Website</button>
+                </a>
                 <h6>GERMANY(DE)</h6>
                 <h6>06/2018 - 07/2019 <br /> (1.1 Years)</h6>
                 <h4>Fullstack Developer (HiWi)</h4>
@@ -167,6 +190,9 @@
             </div>
             <div class="companies__grid__item">
                 <h3>Technical University of Kaiserslautern</h3>
+                <a target="_blank" href="https://cps.cs.uni-kl.de/">
+                    <button class="companies__goto__website">Website</button>
+                </a>
                 <h6>GERMANY(DE)</h6>
                 <h6>09/2019 - Present <br /> (1.2 Years)</h6>
                 <h4>Research Assistant (HiWi)</h4>
@@ -177,7 +203,7 @@
                 </h5>
             </div>
         </div>
-        <br/>
+        <br />
         <br />
         <br />
         <hr />
@@ -191,7 +217,8 @@
             </h2>
             <h5>
                 I constantly strive to get better at what I do. For that reason, I keep on challanginf myself with
-                different software projects and ideas. A very important thing is not to get stagnant with any technology so I try to keep myself  update with lastest coding trends by creating some open source projects.
+                different software projects and ideas. A very important thing is not to get stagnant with any technology
+                so I try to keep myself update with lastest coding trends by creating some open source projects.
             </h5>
         </div>
         <div class="companies__grid">
@@ -201,7 +228,9 @@
                     <button class="companies__goto__website">Source Code</button>
                 </a>
                 <h5>
-                    A project solely developed  by me that lets the user to create and participate in events around their llocation. The user can also upload images related to a particular event and can share it with their friends. 
+                    A project solely developed by me that lets the user to create and participate in events around their
+                    llocation. The user can also upload images related to a particular event and can share it with their
+                    friends.
                 </h5>
             </div>
             <div class="companies__grid__item">
@@ -210,7 +239,8 @@
                     <button class="companies__goto__website">Source Code</button>
                 </a>
                 <h5>
-                    Using ReactJS and Firebase, created a clone of the famous Discord app where users  can create different channels and can chat with each other.
+                    Using ReactJS and Firebase, created a clone of the famous Discord app where users can create
+                    different channels and can chat with each other.
                 </h5>
             </div>
             <div class="companies__grid__item">
@@ -219,7 +249,8 @@
                     <button class="companies__goto__website">Source Code</button>
                 </a>
                 <h5>
-                    Aplatform like twitter where user can post what is on their mind.  Includes features to like,  comment and share othre posts.  Created using ReactJS, NodeJS  and Firestore functions.
+                    Aplatform like twitter where user can post what is on their mind. Includes features to like, comment
+                    and share othre posts. Created using ReactJS, NodeJS and Firestore functions.
                 </h5>
             </div>
             <div class="companies__grid__item">
@@ -228,11 +259,12 @@
                     <button class="companies__goto__website">Source Code</button>
                 </a>
                 <h5>
-                    WebRTC and peerjs provide amazing ease to NodeJS for setting up communications with different systems. Using this technique,  I created a zoom call like app for video and audio calling.
+                    WebRTC and peerjs provide amazing ease to NodeJS for setting up communications with different
+                    systems. Using this technique, I created a zoom call like app for video and audio calling.
                 </h5>
             </div>
         </div>
-        <a  target="_blank" href="https://github.com/shekhars-realm">
+        <a target="_blank" href="https://github.com/shekhars-realm">
             <button class="more__on__git">See more on Github</button>
         </a>
         <br />
@@ -249,25 +281,27 @@
             <div class="mySlides">
                 <img src="public/images/profgrimm.png" alt="">
                 <h3>
-                    "Shekhar's a clear communicator with the tenacity and confidence to really dig in to tricky design scenarios and the
+                    "Shekhar's a clear communicator with the tenacity and confidence to really dig in to tricky design
+                    scenarios and the
                     collaborative friction that's needed to produce excellent work."
                 </h3>
-                <h4>Prof.  Dr. Christoph Grimm</h4>
+                <h4>Prof. Dr. Christoph Grimm</h4>
                 <h5>Department Head, T.U.Kaiserslautern</h5>
             </div>
             <div class="mySlides">
                 <img src="public/images/carna.png" alt="">
                 <h3>
-                    "During his time at the T.U.Kaiserslauutern, Shakhar had created amazing design concepts and had implemented them according to our client's requirements and specification."
+                    "During his time at the T.U.Kaiserslauutern, Shakhar had created amazing design concepts and had
+                    implemented them according to our client's requirements and specification."
                 </h3>
                 <h4>Dr. Carna Zikovic</h4>
                 <h5>Technical Supervisor, T.U.Kaiserslautern</h5>
             </div>
         </div>
     </div>
-    <br/>
     <br />
-    <hr/>
+    <br />
+    <hr />
     <div id="contact" class="contact__me__container">
         <h2>Contact me!</h2>
         <div class="contact__me">
@@ -293,7 +327,7 @@
         </div>
     </div>
 </body>
-<br/>
+<br />
 <footer class="footer">
     <h4>Living, learning, & leveling up one day at a time.</h4>
     <div class="foooter__icons">
@@ -307,7 +341,8 @@
             <i class="footer__icon fab fa-github "></i>
         </a>
     </div>
-    
+
 </footer>
 <script src="script.js" defer></script>
+
 </html>
