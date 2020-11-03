@@ -376,6 +376,7 @@ form>button{
     
  .introduction>svg{
    width: 350px !important;
+   bottom: -75px;
 }
 
 .techstack__chart__container{
