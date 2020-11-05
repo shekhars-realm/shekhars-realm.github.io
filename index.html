@@ -32,6 +32,42 @@
             <a target="_blank" href="https://github.com/shekhars-realm">
                 <i style="color:black" class="fab fa-github header__icon"></i>
             </a>
+            <button id="themeBtn" class="header__button">Theme</button>
+            <div id="themeModal" class="modal">
+            
+                <!-- Modal content -->
+                <div . style="background: dimgray;" id="themeModal__content" class="modal-content">
+                    <div onclick="getThemeType(this)" id="Dark Blood" class="theme__type">
+                        <h2>Dark Blood</h2>
+                        <div class="theme__type__colors">
+                            <p style="background: #e50914;"></p>
+                            <p style="background: #141414;"></p>
+                        </div>
+                    </div>
+                    <div onclick="getThemeType(this)" id="OJ" class="theme__type">
+                        <h2>OJ</h2>
+                        <div class="theme__type__colors">
+                            <p style="background: #f7941d;"></p>
+                            <p style="background: white;"></p>
+                        </div>
+                    </div>
+                    <div onclick="getThemeType(this)" id="Fresh Purp" class="theme__type">
+                        <h2>Fresh Purp</h2>
+                        <div class="theme__type__colors">
+                            <p style="background: rgb(117,16,247)"></p>
+                            <p style="background: white;"></p>
+                        </div>
+                    </div>
+                    <div onclick="getThemeType(this)" id="Green Hit" class="theme__type">
+                        <h2>Green Hit</h2>
+                        <div class="theme__type__colors">
+                            <p style="background: #3AAFA9;"></p>
+                            <p style="background: #17252A"></p>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
             <a href="public/resume_new.pdf" download="Shekhar Bhattacharya">
                 <button class="header__button">Resume</button>
             </a>
@@ -47,7 +83,7 @@
         <h2 class="welcome__subheading">
             I create amazing platforms with JavaScript.
         </h2>
-        <img src="public/images/myAvatar.svg" alt="">
+        <img id="my__svg" src="public/images/myAvatar_purp.svg" alt="">
     </div>
 
 
@@ -211,7 +247,7 @@
     </div>
 
     <div id="companies" class="companies">
-        <img src="public/images/programms.svg" alt="">
+        <i class="fab fa-node-js"></i>
         <div class="comapnies__header">
             <h2>
                 Software Projects
@@ -372,7 +408,7 @@
 </body>
 <br />
 <footer class="footer">
-    <h4>Living, learning, & leveling up one day at a time.</h4>
+    <h3>Living, learning, & leveling up one day at a time.</h3>
     <div class="foooter__icons">
         <a target="_blank" href="https://www.instagram.com/thenovelmonk/">
             <i class="footer__icon fab fa-instagram"></i>

@@ -1,3 +1,12 @@
+var themeColors = {
+    "Dark Blood": ["#e50914", "#141414", "white", "myAvatar_red.svg"],
+    "OJ": ["#f7941d", "white", "black", "myAvatar_org.svg"],
+    "Fresh Purp": ["rgb(117,16,247)",  "white",  "black", "myAvatar_purp.svg"],
+    "Green Hit": ["#3AAFA9","#17252A", "white", "myAvatar_grn.svg"]
+}
+
+const rootEl = document.querySelector(':root');
+
 $("#myChart").fadeIn(function() {
     var ctx = document.getElementById('myChart');
     var myChart = new Chart(ctx, {
@@ -125,7 +134,7 @@ function carousel() {
 
 const squares = document.querySelector('.squares');
 for (var i = 1; i < 365; i++) {
-    const level = i >= 308 ? 0 : Math.floor(Math.random() * 3);
+    const level = i >= 310 ? 0 : Math.floor(Math.random() * 3);
     squares.insertAdjacentHTML('beforeend', `<li data-level="${level}"></li>`);
 }
 
@@ -144,6 +153,13 @@ form.onsubmit = function()  {
 
 // Get the modal
 var modal = document.getElementById("myModal");
+var themeModal = document.getElementById("themeModal")
+
+var themeType  = document.getElementsByClassName("theme__type")
+
+var themeModal__content = document.getElementById("themeModal__content")
+
+var mySvg = document.getElementById("my__svg")
 
 // Get the button that opens the modal
 
@@ -159,7 +175,37 @@ close_btn.onclick = function () {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-    if (event.target == modal) {
+    if (event.target == modal || event.target == themeModal) {
         modal.style.display = "none";
+        themeModal.style.display = "none";
     }
 }
+
+function getThemeType(event) {
+    if (Object.keys(themeColors).includes(event.id)){
+        rootEl.style.setProperty('--accent', themeColors[event.id][0]);
+        rootEl.style.setProperty('--bodycolor', themeColors[event.id][1]);
+        rootEl.style.setProperty('--textcolor', themeColors[event.id][2]);
+        mySvg.src = "public/images/" + themeColors[event.id][3]
+    }
+    themeModal.style.display="none"
+}
+
+//theme modal
+
+
+
+var themeBtn = document.getElementById("themeBtn")
+themeBtn.onclick = function() {
+    themeModal.style.display = "block"
+    console.log(themeModal__content)
+}
+themeModal__content.innerHTML("<div>hello</div>")
+themeColors.forEach(element => {
+    
+});
+
+
+// themeColors.forEach((item) => {
+//     root.style.setProperty('--red', 'blue');
+// })

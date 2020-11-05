@@ -1,24 +1,64 @@
+:root {
+    --accent: rgb(117,16,247); 
+    --bodycolor: white;
+    --textcolor: black;
+}
+
 *{
     font-family: "Courier", sans-serif;;
     padding: 0px;
     margin: 0px;
 }
 
+body{
+    background: var(--bodycolor);
+    color: var(--textcolor)
+}
+
+.theme__type{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.theme__type:hover{
+    border-left: 1px solid white;
+}
+
+.theme__type__colors>p {
+    height: 20px;
+    width: 70px;
+    margin: 5px;
+}
+
+.theme__type__colors {
+    display: flex;
+}
+
 .header{
+    z-index: 1;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    background: var(--bodycolor);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background: rgb(117,16,247);
+    /* background: var(--accent);
 background: linear-gradient(90deg, rgba(117,16,247,1) 0%, rgba(0,0,0,0) 98%); */
     padding: 15px;
 }
 
+
 .header__left{
-    color:  rgb(117,16,247)
+    color:  var(--accent);
 }
 
 .header__left>h2{
-    background-color: rgb(117,16,247);
+    background-color: var(--accent);
     color: white;
     padding:  5px;
 }
@@ -34,15 +74,15 @@ background: linear-gradient(90deg, rgba(117,16,247,1) 0%, rgba(0,0,0,0) 98%); */
     background-color: transparent;
     height: 40px;
     border-radius: 20px;
-    border: 2px solid rgb(117,16,247);
-    color: rgb(117,16,247);
+    border: 2px solid var(--accent);
+    color: var(--accent);
     cursor: pointer;
     transition: all  0.5s;
     width: 70px
 }
 
 .header__button:hover {
-    background-color: rgb(117,16,247);
+    background-color: var(--accent);
     color:  white
 }
 
@@ -54,7 +94,7 @@ background: linear-gradient(90deg, rgba(117,16,247,1) 0%, rgba(0,0,0,0) 98%); */
 
 
 .welcome{
-    padding-top: 100px;
+    padding-top: 150px;
     text-align: center;
 }
 
@@ -86,10 +126,25 @@ background: linear-gradient(90deg, rgba(117,16,247,1) 0%, rgba(0,0,0,0) 98%); */
     width: 600px;
 }
 
+.introduction>svg>g>g>path {
+  stroke: var(--accent);
+  fill: var(--bodycolor)
+}
+
+.introduction>svg>g>g>ellipse {
+  stroke: var(--accent);
+  fill: var(--bodycolor)
+}
+
+.introduction>svg>g>g>rect {
+  stroke: var(--accent);
+  fill: var(--bodycolor)
+}
+
 .intro__aboutme, .comapnies__header{
     color:  white;
     padding:  40px 20px 20px 20px;
-    background-color: rgb(117,16,247);
+    background-color: var(--accent);
     text-align: center;
     display: inline-block;
     width: 90%;
@@ -140,7 +195,7 @@ background: linear-gradient(90deg, rgba(117,16,247,1) 0%, rgba(0,0,0,0) 98%); */
 }
 
 .techstack__borderleft{
-    border-left:1px solid rgb(117,16,247)
+    border-left:1px solid var(--accent)
 }
 
 h5{
@@ -163,7 +218,7 @@ h5{
     padding: 5px;
     margin: 2px;
     display: inline-block;
-    background: rgb(117,16,247);
+    background: var(--accent);
     color: white;
 }
 
@@ -188,7 +243,7 @@ h5{
 }
 
 .companies__grid__item {
-    border: 1px  solid rgb(117,16,247);
+    border: 1px  solid var(--accent);
     border-radius: 5px;
     margin:  5px;
     padding:  5px;
@@ -198,7 +253,7 @@ h5{
 
 .companies__grid__item>h5{
     margin-top: 20px;
-    color:  rgb(117,16,247);
+    color:  var(--accent);
 }
 
 .companies__grid__item>h4{
@@ -206,7 +261,7 @@ h5{
 }
 
 .companies__grid__item:hover{
-    background-color: rgb(117,16,247) !important;
+    background-color: var(--accent) !important;
     color: white  !important;
     border: 1px dashed white
 }
@@ -214,7 +269,7 @@ h5{
 .companies__grid__item:hover .companies__goto__website{
     border: 1px  solid white;
     color: white;
-    background-color: rgb(117,16,247);
+    background-color: var(--accent);
     box-shadow: 2px 2px 12px 3px;
 }
 
@@ -222,8 +277,8 @@ h5{
 
 .more__on__git, .companies__goto__website, .email__me{
     cursor: pointer;
-    background-color: white;
-    color: rgb(117,16,247);
+    background-color: var(--accent);
+    color: var(--bodycolor);
     border-radius: 20px;
     height: 40px;
     padding: 10px;
@@ -234,8 +289,8 @@ h5{
 
 .more__on__git:hover, .email__me:hover {
     border: 1px  solid white;
-    color: white;
-    background-color: rgb(117,16,247);
+    color: var(--accent);
+    background-color: var(--bodycolor);
     box-shadow: 2px 2px 12px 3px;
 }
 
@@ -280,13 +335,13 @@ h5{
 
 .footer {
     height: 100px;
-    background-color: rgb(117,16,247);
+    background-color: var(--accent);
     color: white;
     text-align: center;
     padding: 20px;
 }
 
-.footer>h4{
+.footer>h3{
     margin-bottom: 30px;
     font-weight: 100;
 }
@@ -300,7 +355,9 @@ h5{
 }
 
 .footer__icon{
-    color: white;
+    color: var(--bodycolor);
+    font-size: 20px;
+
 }
 
 .contact__me{
@@ -314,7 +371,7 @@ h5{
 
 .contact__form>form{
     display: grid;
-    background: rgb(117,16,247);
+    background: var(--accent);
     padding: 20px 30px 20px 30px;
     border-radius: 10px;
     text-align: center;
@@ -323,14 +380,20 @@ h5{
 form>textarea {
     resize: none;
     padding: 5px;
-    border-radius: 10px;
+    background: transparent;
+    margin: 10px;
+    border: none;
+    color: var(--bodycolor);
+    border-left: 1px solid var(--bodycolor)  !important;
 }
 
 form>input{
-        height: 40px;
-    border-radius: 10px;
+    background: transparent;
+    border-left: 1px solid var(--bodycolor) !important;
     border: none;
     margin: 10px;
+    color: var(--bodycolor);
+    height: 30px;
     padding: 5px;
 }
 
@@ -338,7 +401,8 @@ form>button{
        margin: 5px;
     height: 30px;
     width: 10p;
-    background: lightgrey;
+    background: var(--bodycolor);
+    color: var(--accent);
     border: none;
     border-radius: 10px;
 }
@@ -374,7 +438,7 @@ form>button{
     position: relative;
     bottom: -20px;
     font-size: 150px;
-    color: rgb(117,16,247);
+    color: var(--accent);
 }
 
 /* Article - https://bitsofco.de/github-contribution-graph-css-grid/ */
@@ -492,7 +556,7 @@ ul, li { list-style-type: none; }
 }
 
 .modal-content>h3{
-    color: rgb(117,16,247);
+    color: var(--accent);
     font-weight: 100;
     margin-top: 20px;
 }
@@ -505,12 +569,12 @@ ul, li { list-style-type: none; }
     padding: 0px 10px;
     margin-top: 20px;
     width: 100px;
-    border: 1px solid rgb(117,16,247);
+    border: 1px solid var(--accent);
     border-radius: 5px;
 }
 .close:hover{
     color: white !important;
-    background: rgb(117,16,247);
+    background: var(--accent);
 }
 
 .close:hover,
