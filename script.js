@@ -6,6 +6,32 @@ var themeColors = {
 }
 
 const rootEl = document.querySelector(':root');
+var mySvg = document.getElementById("my__svg")
+
+
+var techStack = ["ReactJS", "NodeJS", "Redux", "MongoDB", "JavaScript"];
+var counter = 0;
+var elem = document.getElementById("fliptext");
+var inst = setInterval(change, 2000);
+
+
+function change() {
+    $('.item').toggleClass('flipped');
+    $('#fliptext').toggleClass('back');
+    elem.innerHTML = techStack[counter];
+    counter++;
+    if (counter >= techStack.length) {
+        counter = 0;
+        // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+    }
+}
+
+
+$('.flip').click(function () {
+    
+
+});
+
 
 $("#myChart").fadeIn(function() {
     var ctx = document.getElementById('myChart');
@@ -84,34 +110,34 @@ var myPieChart = new Chart(pie, {
     options: {}
 });
 
-jQuery('img.svg').each(function () {
-    var $img = jQuery(this);
-    var imgID = $img.attr('id');
-    var imgClass = $img.attr('class');
-    var imgURL = $img.attr('src');
+// jQuery('img.svg').each(function () {
+//     var $img = jQuery(this);
+//     var imgID = $img.attr('id');
+//     var imgClass = $img.attr('class');
+//     var imgURL = $img.attr('src');
 
-    jQuery.get(imgURL, function (data) {
-        // Get the SVG tag, ignore the rest
-        var $svg = jQuery(data).find('svg');
+//     jQuery.get(imgURL, function (data) {
+//         // Get the SVG tag, ignore the rest
+//         var $svg = jQuery(data).find('svg');
 
-        // Add replaced image's ID to the new SVG
-        if (typeof imgID !== 'undefined') {
-            $svg = $svg.attr('id', imgID);
-        }
-        // Add replaced image's classes to the new SVG
-        if (typeof imgClass !== 'undefined') {
-            $svg = $svg.attr('class', imgClass + ' replaced-svg');
-        }
+//         // Add replaced image's ID to the new SVG
+//         if (typeof imgID !== 'undefined') {
+//             $svg = $svg.attr('id', imgID);
+//         }
+//         // Add replaced image's classes to the new SVG
+//         if (typeof imgClass !== 'undefined') {
+//             $svg = $svg.attr('class', imgClass + ' replaced-svg');
+//         }
 
-        // Remove any invalid XML tags as per http://validator.w3.org
-        $svg = $svg.removeAttr('xmlns:a');
+//         // Remove any invalid XML tags as per http://validator.w3.org
+//         $svg = $svg.removeAttr('xmlns:a');
 
-        // Replace image with new SVG
-        $img.replaceWith($svg);
+//         // Replace image with new SVG
+//         $img.replaceWith($svg);
 
-    }, 'xml');
+//     }, 'xml');
 
-});
+// });
 
 
 var myIndex = 0;
@@ -159,7 +185,6 @@ var themeType  = document.getElementsByClassName("theme__type")
 
 var themeModal__content = document.getElementById("themeModal__content")
 
-var mySvg = document.getElementById("my__svg")
 
 // Get the button that opens the modal
 
@@ -200,10 +225,7 @@ themeBtn.onclick = function() {
     themeModal.style.display = "block"
     console.log(themeModal__content)
 }
-themeModal__content.innerHTML("<div>hello</div>")
-themeColors.forEach(element => {
-    
-});
+
 
 
 // themeColors.forEach((item) => {

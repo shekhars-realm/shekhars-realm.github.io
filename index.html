@@ -20,7 +20,9 @@
 <body>
     <div class="header">
         <div class="header__left">
-            Hi! I am <h2><b>Shekhar Bhattacharya</b></h2>
+           <a style="text-decoration: none;" href="#welcome">
+                <h3>Hi! I am</h3><h2><b>Shekhar Bhattacharya</b></h2>
+           </a>
         </div>
         <div class="header__right">
             <a target="_blank" href="https://www.instagram.com/thenovelmonk/">
@@ -30,7 +32,7 @@
                 <i style="color:blue" class="fab fa-linkedin"></i>
             </a>
             <a target="_blank" href="https://github.com/shekhars-realm">
-                <i style="color:black" class="fab fa-github header__icon"></i>
+                <i style="color:var(--textcolor)" class="fab fa-github header__icon"></i>
             </a>
             <button id="themeBtn" class="header__button">Theme</button>
             <div id="themeModal" class="modal">
@@ -76,12 +78,15 @@
             </a>
         </div>
     </div>
-    <div class="welcome">
+    <div id="welcome" class="welcome">
         <h1 class="welcome__heading">
             Full stack Developer
         </h1>
         <h2 class="welcome__subheading">
-            I create amazing platforms with JavaScript.
+            I create amazing platforms with 
+                <div class="flip item">
+                    <p id="fliptext">JavaScript</p>
+                </div>
         </h2>
         <img id="my__svg" src="public/images/myAvatar_purp.svg" alt="">
     </div>
