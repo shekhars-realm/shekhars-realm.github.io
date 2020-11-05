@@ -2,11 +2,13 @@ var themeColors = {
     "Dark Blood": ["#e50914", "#141414", "white", "myAvatar_red.svg"],
     "OJ": ["#f7941d", "white", "black", "myAvatar_org.svg"],
     "Fresh Purp": ["rgb(117,16,247)",  "white",  "black", "myAvatar_purp.svg"],
-    "Green Hit": ["#3AAFA9","#17252A", "white", "myAvatar_grn.svg"]
+    "Green Hit": ["#3AAFA9","#17252A", "white", "myAvatar_grn.svg"],
+    "Monochrome": ["#141414", "lightgrey", "black", "myAvatar_blk.svg"]
 }
 
 const rootEl = document.querySelector(':root');
 var mySvg = document.getElementById("my__svg")
+
 
 
 var techStack = ["ReactJS", "NodeJS", "Redux", "MongoDB", "JavaScript"];

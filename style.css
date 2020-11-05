@@ -15,8 +15,15 @@ body{
     color: var(--textcolor)
 }
 
-hr{
-    color:   var(--accent);
+.hidenrotate{
+    transform: rotateY(180deg);
+    transition: all 1s;
+    display: none;
+}
+.shownrotate{
+    transform: rotateY(180deg);
+    transition: all 1s;
+    display: block;
 }
 
 .theme__type{

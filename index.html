@@ -67,6 +67,13 @@
                             <p style="background: #17252A"></p>
                         </div>
                     </div>
+                    <div onclick="getThemeType(this)" id="Monochrome" class="theme__type">
+                        <h2>Monochrome</h2>
+                        <div class="theme__type__colors">
+                            <p style="background: #141414;"></p>
+                            <p style="background: lightgrey"></p>
+                        </div>
+                    </div>
                 </div>
             
             </div>
@@ -265,15 +272,20 @@
         </div>
         <div class="companies__grid">
             <div class="companies__grid__item">
-                <h3>Weekend</h3>
-                <a target="_blank" href="https://github.com/shekhars-realm/weekend-api">
-                    <button class="companies__goto__website">Source Code</button>
-                </a>
-                <h4 style="font-weight: 100;">
-                    A project solely developed by me that lets the user to create and participate in events around their
-                    llocation. The user can also upload images related to a particular event and can share it with their
-                    friends.
-                </h4>
+                <div id="front">
+                    <h3>Weekend</h3>
+                    <a target="_blank" href="https://github.com/shekhars-realm/weekend-api">
+                        <button class="companies__goto__website">Source Code</button>
+                    </a>
+                    <h4 style="font-weight: 100;">
+                        A project solely developed by me that lets the user to create and participate in events around their
+                        llocation. The user can also upload images related to a particular event and can share it with their
+                        friends.
+                    </h4>
+                </div>
+                <div id="back" style="display: none;">
+                    hey
+                </div>
             </div>
             <div class="companies__grid__item">
                 <h3>React-Discord Clone</h3>
