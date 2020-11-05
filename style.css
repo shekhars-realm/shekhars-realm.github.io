@@ -141,6 +141,15 @@ background: linear-gradient(90deg, rgba(117,16,247,1) 0%, rgba(0,0,0,0) 98%); */
   fill: var(--bodycolor)
 }
 
+.introduction>svg>g>g>line {
+  stroke: var(--accent);
+  fill: var(--bodycolor)
+}
+
+.introduction>svg>g>g>g>rect {
+  stroke: var(--accent);
+  fill: var(--bodycolor)
+}
 .intro__aboutme, .comapnies__header{
     color:  white;
     padding:  40px 20px 20px 20px;
