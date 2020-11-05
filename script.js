@@ -137,6 +137,9 @@ form.onsubmit = function()  {
     event.preventDefault()
     sendername.innerHTML = `Dear  ${sender.value},`
     modal.style.display = "block";
+    setInterval(() => {
+        modal.style.display = "none";
+    }, 3000);
 }
 
 // Get the modal
