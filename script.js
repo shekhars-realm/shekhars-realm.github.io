@@ -128,3 +128,35 @@ for (var i = 1; i < 365; i++) {
     const level = i >= 308 ? 0 : Math.floor(Math.random() * 3);
     squares.insertAdjacentHTML('beforeend', `<li data-level="${level}"></li>`);
 }
+
+var  sender = document.getElementById("sender")
+var sendername = document.getElementById("sender_name")
+
+var  form = document.getElementById("contact_form")
+form.onsubmit = function()  {
+    event.preventDefault()
+    sendername.innerHTML = `Dear  ${sender.value},`
+    modal.style.display = "block";
+}
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+
+// Get the <span> element that closes the modal
+var close_btn = document.getElementById("close_btn");
+
+// When the user clicks the button, open the modal 
+
+// When the user clicks on <span> (x), close the modal
+close_btn.onclick = function () {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
