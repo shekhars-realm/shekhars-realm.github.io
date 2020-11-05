@@ -121,3 +121,10 @@ function carousel() {
     x[myIndex - 1].style.transition = "all 1s";
     setTimeout(carousel, 7000); // Change image every 2 seconds
 }
+
+
+const squares = document.querySelector('.squares');
+for (var i = 1; i < 365; i++) {
+    const level = i >= 308 ? 0 : Math.floor(Math.random() * 3);
+    squares.insertAdjacentHTML('beforeend', `<li data-level="${level}"></li>`);
+}
