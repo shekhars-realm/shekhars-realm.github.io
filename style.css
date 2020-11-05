@@ -30,9 +30,9 @@ body{
     margin: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     cursor: pointer;
-    padding: 3px;
+    padding: 3px 6px;
 }
 
 .theme__type:hover{
