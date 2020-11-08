@@ -106,12 +106,40 @@
             <h2>
                 Hey! Nice to meet you.
             </h2>
-            <h3>
-                I have been creating Web/Mobile applications since 4 years now and that experience have made me
-                confident with my skills and the tech stack. I use JavaScript as my primary language with different
-                add-ons like React, Redux etc to enhance the capabilities of JS. Ofcourse, NodeJS is also my playground
-                which I use in combination with Express, MongoDB and Firebase.
-            </h3>
+            <div class="intro_code_container">
+                <img src="public/images/introduction_code.png" alt="">
+            </div>
+            <button id="copy_code_btn" class="copy_intro_code"  onclick="copyCode()">Copy to Clipboard</button>
+            <input style="display: none" id="intro_code"  value='class Shekhar{
+                contructor(){
+                this.name = "Shekhar Bhattacharya",
+                this.age = 26,
+                this.bio = "I am a javascript developer with a zest for technological innovation"
+                }
+                
+                get experience() {
+                return [
+                "Research Assistant at T.U.Kaiserslautern (09/2019 - Present)",
+                "Fullstack Developer at InnoCow GmbH (06/2018 - 07/2019)",
+                "Fullstack Developer at Algoworks Technologies (01/2017 - 09/2017)",
+                "Software Developer at Magic EdTech (05/2016 - 01/2017)"
+                ]}
+                
+                get education() {
+                return [
+                "MS in Applied Computer Science at T.U.Kaiserslautern, Germany - 11/2020",
+                "BE in Computer Science at Dr. A.P.J. Abdul Kalam Technical University, India"
+                ]
+                }
+                
+                get skills() {
+                return {
+                "Frontend": "Javascript, ReactJS, React Native, Redux, HTML3, CSS5",
+                "Backend": "NodeJS, Express, MongoDB, Firebase, ArangoDB",
+                "Deployment": "Docker, Kubernetes, CI/CD, Google Cloud"
+                }
+                }
+                }'>
         </div>
     </div>
     <div class="techstack">

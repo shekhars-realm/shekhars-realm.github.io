@@ -140,6 +140,18 @@ background: linear-gradient(90deg, rgba(117,16,247,1) 0%, rgba(0,0,0,0) 98%); */
     width: 70px
 }
 
+.copy_intro_code {
+    background-color: var(--bodycolor);
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    cursor: pointer;
+    transition: all  0.5s;
+    padding: 0px 3px;
+    width: 150px;
+}
+
 .header__button:hover {
     background-color: var(--accent);
     color:  white
@@ -206,6 +218,11 @@ background: linear-gradient(90deg, rgba(117,16,247,1) 0%, rgba(0,0,0,0) 98%); */
 .introduction>svg>g>g>line {
   stroke: var(--accent);
   fill: var(--bodycolor)
+}
+
+.intro_code_container{
+    max-width: 900px;
+    margin: 20px auto;
 }
 
 .introduction>svg>g>g>g>rect {
@@ -662,6 +679,10 @@ ul, li { list-style-type: none; }
     padding: 10px;
     max-width: 1000px;
     margin: auto;
+}
+
+.intro_code_container{
+    overflow-x: auto;
 }
 
 .modal-content{

@@ -167,6 +167,47 @@ var myPieChart = new Chart(pie, {
 
 // });
 
+function copyCode() {
+    var copyText = document.createElement("INPUT")
+    copyText.setAttribute("value", `class Shekhar{
+                contructor(){
+                this.name = "Shekhar Bhattacharya",
+                this.age = 26,
+                this.bio = "I am a javascript developer with a zest for technological innovation"
+                }
+                
+                get experience() {
+                return [
+                "Research Assistant at T.U.Kaiserslautern (09/2019 - Present)",
+                "Fullstack Developer at InnoCow GmbH (06/2018 - 07/2019)",
+                "Fullstack Developer at Algoworks Technologies (01/2017 - 09/2017)",
+                "Software Developer at Magic EdTech (05/2016 - 01/2017)"
+                ]}
+                
+                get education() {
+                return [
+                "MS in Applied Computer Science at T.U.Kaiserslautern, Germany - 11/2020",
+                "BE in Computer Science at Dr. A.P.J. Abdul Kalam Technical University, India"
+                ]
+                }
+                
+                get skills() {
+                return {
+                "Frontend": "Javascript, ReactJS, React Native, Redux, HTML3, CSS5",
+                "Backend": "NodeJS, Express, MongoDB, Firebase, ArangoDB",
+                "Deployment": "Docker, Kubernetes, CI/CD, Google Cloud"
+                }
+                }
+                }`)
+    console.log(copyText)
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    //alert("Copied);
+    let btn = document.getElementById("copy_code_btn")
+    btn.innerHTML = "Copied!"
+}
+
 
 var myIndex = 0;
 carousel();
