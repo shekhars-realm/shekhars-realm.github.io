@@ -231,7 +231,7 @@ function carousel() {
 
 const squares = document.querySelector('.squares');
 for (var i = 1; i < 365; i++) {
-    const level = i >= 310 ? 0 : Math.floor(Math.random() * 3);
+    const level = i >= 342 ? 0 : Math.floor(Math.random() * 3);
     squares.insertAdjacentHTML('beforeend', `<li data-level="${level}"></li>`);
 }
 
