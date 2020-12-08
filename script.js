@@ -203,9 +203,11 @@ function copyCode() {
     copyText.select();
     copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
-    //alert("Copied);
     let btn = document.getElementById("copy_code_btn")
     btn.innerHTML = "Copied!"
+    setTimeout(() => {
+        btn.innerHTML = "Copy to Clipboard"
+    }, 2000);
 }
 
 
